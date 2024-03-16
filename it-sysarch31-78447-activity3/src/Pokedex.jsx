@@ -1,14 +1,13 @@
-import Pokemon from "./Pokemon";
+import React from 'react';
 
-function Pokedex(){
-    return(
-        <body>
-            <button class="button1">English</button>
-            <button class="button2">Japanese</button>
-            <button class="button3">Chinese</button>
-            <button class="button4">French</button>
-        </body>
-        
-    );
-}
+const Pokedex = ({ pokemonList }) => {
+  return (
+    <div className="pokedex">
+      {pokemonList.map((pokemon, index) => (
+        <Pokemon key={pokemon.id} pokemon={pokemon} />
+      ))}
+    </div>
+  );
+};
+
 export default Pokedex;
