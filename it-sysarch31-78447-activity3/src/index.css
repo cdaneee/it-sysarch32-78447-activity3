@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+  }
+
+  h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    text-align: left;
+    font-size: 50px;
+  }
+
+  .button{
+    margin:0px;
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .button1{
+    background-color: black;
+    padding: 10px 20px;
+    color: wheat;
+    
+    margin-left: 20px;
+  }
+  .button2{
+    background-color: rgb(16, 53, 87);
+    padding: 10px 20px;
+    color: white;
+    
+    margin-left: 10px;
+  }
+  .button3{
+    background-color: aliceblue;
+    padding: 10px 20px;
+    
+    margin-left: 10px;
+  }
+  .button4{
+    background-color: aliceblue;
+    padding: 10px 20px;
+    
+    margin-left: 10px;
+  }
+  .button5{
+    background-color: aliceblue;
+    padding: 10px 20px;
+    margin-left: 10px;
+    
+  }
+
