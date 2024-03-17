@@ -1,20 +1,22 @@
 import React from 'react';
-import './App.css';
 
-const Card = (props) => {
-  const { id, 
-        name, type, base, image } = props.pokemon;
+const Card = ({ pokemon }) => {
+  const { id, name, type, base, image } = pokemon;
 
   return (
-    <div>
-    {list.map(pokemon => (
-      <div key={pokemon.id}>
-        <h2>{pokemon.name.english}</h2>
-        <p>Type: {pokemon.type.join(', ')}</p>
-        <img src={pokemon.image} alt={pokemon.name.english} />
+    <div className="card">
+      <div className="card-image">
+        <img src={image} alt={name.english} />
       </div>
-    ))}
-  </div>
+      <div className="card-content">
+        <p>ID: {id}</p>
+        <p>Name: {name.english}</p>
+        <p>Type: {type.join(', ')}</p>
+        <p>HP: {base.HP}</p>
+        <p>Attack: {base.Attack}</p>
+        {/* Add more stats as needed */}
+      </div>
+    </div>
   );
 };
 

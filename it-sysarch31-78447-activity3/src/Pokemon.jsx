@@ -1,23 +1,37 @@
 import React from 'react';
 
-const Pokemon = ({ pokemon }) => {
+const Pokemon = ({ pokemon, language }) => {
   const { id, name, type, base, image } = pokemon;
-  const { HP, Attack, Defense, Sp_Attack, Sp_Defense, Speed } = base;
 
   return (
     <div className="pokemon-card">
-      <h2>{name.english}</h2>
-      <img src={image} alt={name.english} />
-      <p>ID: {id}</p>
-      <p>Type: {type.join(', ')}</p>
-      <ul>
-        <li>HP: {HP}</li>
-        <li>Attack: {Attack}</li>
-        <li>Defense: {Defense}</li>
-        <li>Sp. Attack: {Sp_Attack}</li>
-        <li>Sp. Defense: {Sp_Defense}</li>
-        <li>Speed: {Speed}</li>
-      </ul>
+      <div className="card">
+        <div className="card-image">
+          <img src={image} alt={name[language]} />
+        </div>
+        <div className="card-content">
+          <div className="id-name">
+            <p className="id-name-text">{`[${id}] ${name[language].toUpperCase()}`}</p>
+          </div>
+          <div className="type-buttons">
+            {type.map((t, index) => (
+              <button key={index} className="type-button">{t}</button>
+            ))}
+          </div>
+          <div className="stats">
+            <div className="left-stats">
+              <p><b>HP: </b>{base.HP}</p>
+              <p><b>Attk:</b> {base.Attack}</p>
+              <p><b>Def:</b> {base.Defense}</p>
+            </div>
+            <div className="right-stats">
+              <p><b>Speed: </b>{base.Speed}</p>
+              <p><b>Sp. Attk: </b>{base['Sp. Attack']}</p>
+              <p><b>Sp. Def: </b>{base['Sp. Defense']}</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

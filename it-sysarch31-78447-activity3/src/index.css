@@ -1,61 +1,110 @@
-*{
-    margin: 0;
-    text-decoration: none;
-    box-sizing: border-box;
-  }
-  
-  body{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-  }
+* {
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
 
-  h1{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    text-align: left;
-    font-size: 50px;
-  }
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: rgb(248, 248, 57);
+  padding: 0;
+}
 
-  .button{
-    margin:0px;
-    list-style: none;
-    display: inline-block;
-    margin: 20px;
-    text-decoration: none;
-    text-align: center;
-  }
-  
-  .button1{
-    background-color: black;
-    padding: 10px 20px;
-    color: wheat;
-    
-    margin-left: 20px;
-  }
-  .button2{
-    background-color: rgb(16, 53, 87);
-    padding: 10px 20px;
-    color: white;
-    
-    margin-left: 10px;
-  }
-  .button3{
-    background-color: aliceblue;
-    padding: 10px 20px;
-    
-    margin-left: 10px;
-  }
-  .button4{
-    background-color: aliceblue;
-    padding: 10px 20px;
-    
-    margin-left: 10px;
-  }
-  .button5{
-    background-color: aliceblue;
-    padding: 10px 20px;
-    margin-left: 10px;
-    
-  }
+h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 100px;
+}
+
+.buttons {
+  margin: 0 auto; /* Set left and right margins to auto */
+  padding: 0;
+  text-align: center;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.buttons button {
+  margin-left: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  cursor: crosshair;
+}
+
+p{
+  text-align: center;
+}
+
+
+
+
+
+
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-left: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border: 2px solid rgb(30, 30, 46);
+  box-shadow: 0px 2px 5px rgb(2, 4, 7);
+  margin-bottom: 20px;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card-content {
+  margin-top: 10px;
+}
+
+
+.pokemon-card {
+  display: inline-block;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 300px; /* Adjust width as needed */
+}
+
+/* ex. [1001] BULBA*/
+.id-name-text{
+  margin-bottom: 10px;
+}
+
+/* GRASS & POSION */
+.type-button {
+  display: inline-block; /* Ensure button behaves as a block element */
+  margin: 5px 20px; /* Adjust the margin as needed */
+  padding: 5px 15px; /* Add padding for better spacing */
+  text-align: center; /* Center text horizontally */
+  border-radius: 50px; /* Apply border radius for rounded corners */
+  border: none;
+}
+
+
+
+/*STATUS AND INFO OF POKEMONS */
+.stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-stats,
+.right-stats {
+  width: 45%; /* Adjust the width as needed */
+}
+
+.left-stats p,
+.right-stats p {
+  margin: 5px 0;
+}
 

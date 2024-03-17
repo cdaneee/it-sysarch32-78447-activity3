@@ -3,7 +3,7 @@ import React from 'react';
 const Header = () => {
   return (
     <header>
-      <h1>POKEDEX</h1>
+      <h1>Pokedex</h1>
     </header>
   );
 };
