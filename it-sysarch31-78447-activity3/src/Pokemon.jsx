@@ -20,14 +20,14 @@ const Pokemon = ({ pokemon, language }) => {
           </div>
           <div className="stats">
             <div className="left-stats">
-              <p><b>HP: </b>{base.HP}</p>
-              <p><b>Attk:</b> {base.Attack}</p>
-              <p><b>Def:</b> {base.Defense}</p>
+              <p><b>HP: </b><span style={{ color: 'rgba(0, 255, 0, 0.7)' }}>{base.HP}</span></p>
+              <p><b>Attk: </b><span style={{ color: 'red' }}>{base.Attack}</span></p>
+              <p><b>Def: </b><span style={{ color: 'blue' }}>{base.Defense}</span></p>
             </div>
             <div className="right-stats">
-              <p><b>Speed: </b>{base.Speed}</p>
-              <p><b>Sp. Attk: </b>{base['Sp. Attack']}</p>
-              <p><b>Sp. Def: </b>{base['Sp. Defense']}</p>
+              <p><b>Speed: </b><span style={{ color: 'orange' }}>{base.Speed}</span></p>
+              <p><b>Sp. Attk: </b><span style={{ color: 'red' }}>{base['Sp. Attack']}</span></p>
+              <p><b>Sp. Def: </b><span style={{ color: 'violet' }}>{base['Sp. Defense']}</span></p>
             </div>
           </div>
         </div>

@@ -5,19 +5,22 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  background-color: rgb(248, 248, 57);
+  background-color: yellow;
   padding: 0;
 }
 
+
+/*POKEDEX*/
 h1 {
-  margin-top: 20px;
+  font-family: 'magic_space';
+  margin-top: 30px;
   margin-bottom: 20px;
   text-align: center;
   font-size: 100px;
 }
 
+/*LANGUAGES*/
 .buttons {
   margin: 0 auto; /* Set left and right margins to auto */
   padding: 0;
@@ -27,34 +30,41 @@ h1 {
 }
 
 .buttons button {
-  margin-left: 20px;
-  padding: 10px 20px;
-  text-decoration: none;
-  text-align: center;
-  display: inline-block;
+  margin-left: 10px;
+  padding: 5px 20px;
   cursor: crosshair;
 }
 
-p{
-  text-align: center;
+.button1{
+  font-weight: bold;
+  background-color: rgb(98, 255, 255);
+}
+.button2{
+  font-weight: bold;
+  background-color: rgb(182, 223, 255);
+}
+.button3{
+  font-weight: bold;
+  background-color: rgb(143, 242, 136);
+}
+.button4{
+  font-weight: bold;
+  background-color: rgb(255, 247, 165);
 }
 
 
-
-
-
-
-
+/*WHITE ANG BORDER*/
 .card {
   border: 1px solid #ccc;
   border-radius: 8px;
   margin-left: 20px;
   margin-top: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  border: 2px solid rgb(30, 30, 46);
+  padding: 22px;
+  border: 3px solid rgb(231, 231, 255);
   box-shadow: 0px 2px 5px rgb(2, 4, 7);
   margin-bottom: 20px;
+  background-color: rgb(0, 6, 6);
 }
 
 .card-image img {
@@ -67,26 +77,36 @@ p{
   margin-top: 10px;
 }
 
+p{
+  text-align: center;
+}
 
 .pokemon-card {
   display: inline-block;
   flex-wrap: wrap;
   justify-content: center;
-  width: 300px; /* Adjust width as needed */
+  width: 300px; 
 }
 
 /* ex. [1001] BULBA*/
 .id-name-text{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-bottom: 10px;
+  font-weight: bold;
+  color: white;
 }
 
-/* GRASS & POSION */
+/* GRASS & POISON BUTTONS*/
 .type-button {
-  display: inline-block; /* Ensure button behaves as a block element */
-  margin: 5px 20px; /* Adjust the margin as needed */
-  padding: 5px 15px; /* Add padding for better spacing */
-  text-align: center; /* Center text horizontally */
-  border-radius: 50px; /* Apply border radius for rounded corners */
+  display: inline-block;
+  margin: 5px 20px; /* Sets equal margin on both sides */
+  padding: 5px 18px;
+  color: black;
+  font-family: 'hp';
+  justify-content: center;
+  font-size: larger;
+  background-color:  rgb(117, 235, 235);
+  border-radius: 50px;
   border: none;
 }
 
@@ -94,6 +114,8 @@ p{
 
 /*STATUS AND INFO OF POKEMONS */
 .stats {
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   justify-content: space-between;
 }
