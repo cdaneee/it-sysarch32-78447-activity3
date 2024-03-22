@@ -15,9 +15,9 @@ body {
 h1 {
   font-family: 'magic_space';
   margin-top: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: center;
-  font-size: 100px;
+  font-size: 85px;
 }
 
 /*LANGUAGES*/
@@ -54,22 +54,31 @@ h1 {
 
 
 /*WHITE ANG BORDER*/
+/*new update*/
 .card {
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 5px;
   margin-left: 20px;
-  margin-top: 20px;
+  margin-top: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 22px;
-  border: 3px solid rgb(231, 231, 255);
+  border: 8px solid rgb(255, 255, 255);
   box-shadow: 0px 2px 5px rgb(2, 4, 7);
-  margin-bottom: 20px;
-  background-color: rgb(0, 6, 6);
+  padding: 20px; /* Adjust padding for inner content */
+  height: 450px; /* Reduce height to avoid overflow */
+  display: flex; /* Use flexbox for positioning */
+  flex-direction: column; /* Align items vertically */
+  background-color: rgb(0, 13, 13);
+}
+
+.card-image {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
 }
 
 .card-image img {
-  width: 100%;
-  height: auto;
+  width: 45%;
+   /* Ensure the image does not exceed its container */
   border-radius: 8px;
 }
 
@@ -77,37 +86,46 @@ h1 {
   margin-top: 10px;
 }
 
-p{
+p {
   text-align: center;
+  margin: 10px; /* Reduce margin between lines */
 }
 
 .pokemon-card {
   display: inline-block;
   flex-wrap: wrap;
   justify-content: center;
-  width: 300px; 
+  width: 500px;
+  margin-top: -20px; /* Adjust the negative margin to move the card container up */
+  padding: 10px 20px;
 }
 
 /* ex. [1001] BULBA*/
 .id-name-text{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-bottom: 10px;
-  font-weight: bold;
-  color: white;
+  margin-bottom: 18px;
+  font-size: x-large;
+  color: rgb(255, 255, 255);
 }
 
 /* GRASS & POISON BUTTONS*/
 .type-button {
   display: inline-block;
-  margin: 5px 20px; /* Sets equal margin on both sides */
-  padding: 5px 18px;
+  margin: 3px 18px; /* Sets equal margin on both sides */
+  padding: 5px 32px;
   color: black;
   font-family: 'hp';
   justify-content: center;
   font-size: larger;
+  font-weight: bold;
   background-color:  rgb(117, 235, 235);
   border-radius: 50px;
   border: none;
+}
+
+.type-buttons {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
 }
 
 
@@ -118,11 +136,14 @@ p{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   justify-content: space-between;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 5px;
 }
 
 .left-stats,
 .right-stats {
-  width: 45%; /* Adjust the width as needed */
+  width: 42%; /* Adjust the width as needed */
 }
 
 .left-stats p,
